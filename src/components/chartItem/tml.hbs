@@ -1,0 +1,16 @@
+
+<li class="chat__item card {{className}}">
+  <div class="card__container">
+    <img src={{avatar}} alt="avatar" class="card__avatar" />
+    <div class="card__message-container">
+      <p class="card__name">{{name}}</p>
+      <p class="card__message">{{message}}</p>
+    </div>
+  </div>
+  <div class="card__time-container">
+    <p class="card__date">{{date}}</p>
+    {{#if count}}
+      <p class="counter">{{count}}</p>
+    {{/if}}
+  </div>
+</li>
