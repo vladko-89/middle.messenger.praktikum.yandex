@@ -2,12 +2,11 @@
   "name": "practicum-messanger",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel ./static/index.html --open --no-cache",
     "build": "parcel build ./static/index.html",
-    "start": "parcel build static/index.html & node server.js"
+    "start": "parcel build ./static/index.html & node server.js"
   },
   "keywords": [],
   "author": "",
