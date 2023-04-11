@@ -1,0 +1,38 @@
+<div class="chat">
+  <header class="chat__header">
+    <button class="chat__button chat__button_theme"></button>
+    <button class="chat__button chat__button_notification"></button>
+  </header>
+  <main class="chat__main">
+    <aside class="chat__sidebar">
+      <div  class="chat__control-panel">
+        <div class="chat__buttons">
+          <button class="chat__new-dialog"></button>
+          <button class="chat__setting"></button>
+        </div>
+        
+        <form  class="chat__search">
+          <input type="text" class="search__input" placeholder="Search" />
+          <button class="search__submit" disabled></button>
+        </form>
+      </div>
+
+      <ul class="chat__list">{{{list}}}</ul>
+    </aside>
+    <div class="chat__current-dialog">
+      <ul class="chat__messages">
+
+        {{{ messages}}}
+
+      </ul>
+
+      <form class="chat__form-send">
+        <button class="chat__button chat__button_voice" type="button"></button>
+        <button class="chat__button chat__button_pic" type="button"></button>
+        <button class="chat__button chat__button_smile" type="button"></button>
+        <input type="text" class="chat__input" placeholder="Type message" name="message">
+        <button class="chat__button chat__button_send" type="submit" disabled></button>
+      </form>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,18 @@
+<main class="main">
+  <div class="content">
+      <form class="form">
+        {{{title}}}
+        {{#if auth}}
+          <p class="auth__text">Don't have account? <span class="auth__link">Sign Up</span></p>
+        {{/if}}
+        <ul class="auth__inputs">
+          {{#each inputs}}
+            <li auth__input>{{{this}}}</li>
+          {{/each}}
+        </ul>
+        
+        {{{button}}}
+      </form>
+  </div>
+  
+</main>

@@ -1,0 +1,21 @@
+<main class="main">
+  <div class="content">
+        
+    {{#if server }}
+      <h1 class="code">{{code}}</h1>
+      <p class="text">We are already aware of the problem 
+and are fixing it</p>
+      
+      
+      {{else}}
+        <h1 class="code">{{code}}</h1>
+        <p class="text">Sorry, this page is still in development</p>
+        <div class="button-container">
+          {{{button}}}
+        </div>
+        
+    {{/if}}
+        
+  </div>
+  
+</main>
