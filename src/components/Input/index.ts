@@ -34,12 +34,14 @@ export class Input extends Block {
 
   _addEvents () {
     super._addEvents()
-    this.getContent()!.querySelector('input')?.addEventListener('focus', () => {
-      this.isValid()
-    })
-    this.getContent()!.querySelector('input')?.addEventListener('blur', () => {
-      this.isValid()
-    })
+    this.getContent()!.querySelector('input')?.addEventListener('focus', this.isValid)
+    this.getContent()!.querySelector('input')?.addEventListener('blur', this.isValid)
+  }
+
+  _removeEvents () {
+    super._removeEvents()
+    this.getContent()!.querySelector('input')?.removeEventListener('focus', this.isValid)
+    this.getContent()!.querySelector('input')?.removeEventListener('blur', this.isValid)
   }
 
   render () {

@@ -24,6 +24,11 @@ export class Form extends Block {
     super._addEvents()
   }
 
+  _removeEvents () {
+    this.getContent()!.removeEventListener('submit', this._handleSubmit)
+    super._removeEvents()
+  }
+
   render () {
     return this.compile(template, this.props)
   }
