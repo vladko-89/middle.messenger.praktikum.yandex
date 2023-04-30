@@ -1,29 +1,23 @@
-@use '../../variables.scss' as *;
+@use "../../variables.scss" as *;
 
 .submit {
   width: 100%;
   padding: 20px;
-
+  border: none;
+  border-radius: 12px;
+  background-color: $color-accent;
+  color: $color-primary;
   font-size: 16px;
   line-height: 20px;
-  color: $color-primary;
-
-  background-color: $color-accent;
-  border-radius: 12px;
-  border: none;
-
 }
 
 .reset {
   width: 100%;
   padding: 20px;
-
+  border: 1px solid $color-accent;
+  border-radius: 12px;
+  background-color: transparent;
+  color: $color-primary;
   font-size: 16px;
   line-height: 20px;
-  color: $color-primary;
-
-  background-color: transparent;
-  border-radius: 12px;
-  border: 1px solid $color-accent;
-
 }

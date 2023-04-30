@@ -5,6 +5,11 @@
 
 ![Ссылка на макет проекта](https://www.figma.com/file/C9buBgB3jEvyZpWqJ0R5VE/Untitled?node-id=0%3A1&t=yQSwbA6lSereFjVh-1)
 
+ Что выполнено на текущем этапе:
+
+ - Внедрен TypeScript
+ - Используется компонентный подход
+
 ## Установка
 
 - `npm install` — установка стабильной версии,

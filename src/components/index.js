@@ -1,5 +1,11 @@
-export { Title } from './Title/title'
+export { Title } from './title'
 export { Input } from './Input'
 export { Button } from './button'
 export { Message } from './message'
-export { ChartItem } from './chartItem'
+export { ChatItem } from './chatItem'
+export { Form } from './form'
+
+export { ProfileContent } from './profileContent'
+export { ProfileContentItem } from './profileContentItem'
+export { Avatar } from './avatar'
+export { formMessage, FormMessage } from './formSendMessage'
