@@ -42,6 +42,14 @@ const email = new Input({
   validateConfig: getString({ required: true, minlength: 2, pattern: validateConfig.email })
 })
 
+const nickName = new Input({
+  type: 'text',
+  placeholder: 'Nickname',
+  name: 'display_name',
+  class: 'input-form',
+  validateConfig: getString({ required: true, minlength: 2, pattern: validateConfig.login })
+})
+
 const login = new Input({
   type: 'text',
   placeholder: 'Login',
@@ -61,6 +69,7 @@ const phone = new Input({
 const inputs = [
   name,
   surname,
+  nickName,
   email,
   login,
   phone

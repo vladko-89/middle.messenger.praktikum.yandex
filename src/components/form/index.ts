@@ -14,11 +14,13 @@ export class Form extends Block {
     this.validator = new FormValidator(this.form, 'form')
   }
 
+  _handleSubmit (e: Event) {
+    this.submitter.submit(e)
+    this.validator.isValidForm()
+  }
+
   _addEvents () {
-    this.getContent()!.addEventListener('submit', (e) => {
-      this.submitter.submit(e)
-      this.validator.isValidForm()
-    })
+    this.getContent()!.addEventListener('submit', this._handleSubmit)
     super._addEvents()
   }
 

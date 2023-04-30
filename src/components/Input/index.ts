@@ -24,10 +24,9 @@ export class Input extends Block {
     }
   }
 
-  isValid (inputItem: HTMLInputElement) {
-    console.log(inputItem.validationMessage)
-    if (!inputItem.validity.valid) {
-      this._showInputError(inputItem.validationMessage)
+  isValid () {
+    if (!this.getContent()!.querySelector('input')!.validity.valid) {
+      this._showInputError(this.getContent()!.querySelector('input')!.validationMessage)
     } else {
       this._hideInputError()
     }
@@ -36,10 +35,10 @@ export class Input extends Block {
   _addEvents () {
     super._addEvents()
     this.getContent()!.querySelector('input')?.addEventListener('focus', () => {
-      this.isValid(this.getContent()!.querySelector('input')!)
+      this.isValid()
     })
     this.getContent()!.querySelector('input')?.addEventListener('blur', () => {
-      this.isValid(this.getContent()!.querySelector('input')!)
+      this.isValid()
     })
   }
 
