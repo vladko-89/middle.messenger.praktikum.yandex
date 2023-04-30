@@ -1,0 +1,63 @@
+@use "../../variables.scss" as *;
+
+.card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid $color-accent;
+  border-radius: 12px;
+  background-color: $background-card;
+
+  &_current {
+    background-color: $color-accent;
+  }
+}
+
+.card__container {
+  display: flex;
+  width: 80%;
+  gap: 0.5vw;
+}
+
+.card__avatar {
+  width: 24px;
+  height: 24px;
+}
+
+.card__message-container {
+  display: flex;
+  max-width: 95%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.card__name {
+  position: relative;
+  top: 3px;
+  margin: 0;
+  color: $color-primary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.card__message {
+  overflow: hidden;
+  margin: 0;
+  color: $color-primary;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card__date {
+  margin: 0;
+  color: rgb(217 217 217 / 63%);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}

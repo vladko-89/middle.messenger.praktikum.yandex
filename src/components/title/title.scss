@@ -1,0 +1,10 @@
+@use "../../variables.scss" as *;
+
+.title {
+  margin: 0;
+  margin-bottom: 8px;
+  color: $color-primary;
+  font-family: "Halvar Breitschrift", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}

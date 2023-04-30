@@ -1,4 +1,4 @@
-@use '../../variables.scss' as *;
+@use "../../variables.scss" as *;
 
 .message-container {
   width: max-content;
@@ -11,20 +11,17 @@
 
 .message {
   padding: 16px 20px;
-
-  color: $background-primary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  background-color: $color-tools;
   border-radius: 24px 16px 16px 4px;
+  background-color: $color-tools;
+  color: $background-primary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
   overflow-wrap: wrap;
 
   &_owner {
-    color: $color-primary;
-
-    background-color: $color-accent;
     border-radius: 16px 24px 4px 16px;
-    
+    background-color: $color-accent;
+    color: $color-primary;
   }
-} 
+}
