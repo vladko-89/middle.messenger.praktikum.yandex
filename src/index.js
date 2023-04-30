@@ -1,3 +1,3 @@
-import router from "./utils/router";
+import router from './utils/router'
 
-router();
+router()

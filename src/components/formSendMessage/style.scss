@@ -1,0 +1,51 @@
+@use "../../variables.scss" as *;
+
+.chat__form-send {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 12px;
+  border-radius: 16px;
+  background-color: $color-tools;
+}
+
+.chat__button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  &_voice {
+    background-image: url("./assets/notification-icon.svg");
+  }
+
+  &_pic {
+    background-image: url("./assets/picture-icon.svg");
+  }
+
+  &_smile {
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/smile-icon.svg");
+  }
+
+  &_notification {
+    background-image: url("./assets/notification-icon.svg");
+  }
+
+  &_theme {
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/theme-icon.svg");
+  }
+
+  &_send {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: transparent;
+    background-image: url("./assets/send-icon.svg");
+    background-repeat: no-repeat;
+  }
+}

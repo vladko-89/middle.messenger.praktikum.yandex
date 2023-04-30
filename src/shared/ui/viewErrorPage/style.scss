@@ -1,0 +1,33 @@
+.code {
+  color: #fff;
+  font-family: "Halvar Breitschrift", sans-serif;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+
+  /* identical to box height, or 154px */
+
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.text {
+  color: #fff;
+  font-family: "Halvar Breitschrift", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+
+  /* or 43px */
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-container {
+  width: 30%;
+  margin-top: 10vh;
+}
