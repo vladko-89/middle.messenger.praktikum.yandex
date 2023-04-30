@@ -16,6 +16,11 @@
     "jsx": "preserve",
     "incremental": true,
     "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
     "emitDecoratorMetadata": true
   }
 }

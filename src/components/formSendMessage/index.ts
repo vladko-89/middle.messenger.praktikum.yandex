@@ -3,7 +3,7 @@ import './style.scss'
 import { Block } from '../../shared/lib/block'
 import { Button } from '../button'
 import { MessageInput } from '../messageInput'
-import { type ISubmitter, Submitter, FormValidator } from '../../shared'
+import { Submitter, FormValidator } from '../../shared'
 import { type FormMessagePropsType } from './types'
 
 const buttonVoice = new Button({
